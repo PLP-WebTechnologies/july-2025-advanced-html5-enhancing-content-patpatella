@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Content & Form Example</title>
+  <meta name="description" content="An example page demonstrating lists, tables, media, and a structured HTML5 form with validation and accessibility.">
+</head>
+<body>
+  <header>
+    <h1>HTML5 Content & Form Example</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#form-section">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section: Content with lists, tables, media -->
+    <section id="content">
+      <h2>Organizing Information</h2>
+
+      <h3>Lists of Products</h3>
+      <p>Here is an example of ordered and unordered lists:</p>
+      <ul>
+        <li>Beauty products</li>
+        <li>Make-up kit</li>
+        <li>Facewash</li>
+      </ul>
+
+      <ol>
+        <li>Health products</li>
+        <li>Multivitamins shake</li>
+        <li>Iron supplements</li>
+      </ol>
+
+      <h3>Products & their prices</h3>
+      <p>Here is a simple table demonstrating data organization:</p>
+      <table border="1">
+        <caption>Sample Product Table</caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Make-up kit</td>
+            <td>P500</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Facewash</td>
+            <td>P90</td>
+            <td>200</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Product gallery</h3>
+      <p>Embedding an image, audio, and video:</p>
+      <figure>
+        <img src="https://images.pexels.com/photos/17466173/pexels-photo-17466173.jpeg" alt="Example Image" width="300">
+        <figcaption>Example Image</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="example-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="320">
+        <source src="https://www.pexels.com/download/video/3762991/" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+
+    </section>
+
+    <!-- Section: Form -->
+    <section id="form-section">
+      <h2>Sample HTML5 Form</h2>
+      <form action="/submit" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6">
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="newsletter">Subscribe to newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter">
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="botswana">Botswana</option>
+            <option value="south-africa">South Africa</option>
+            <option value="kenya">Kenya</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here" required></textarea>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="appointment">Preferred Appointment Time:</label>
+          <input type="time" id="appointment" name="appointment">
+
+          <label for="quantity">Quantity (1-10):</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pat Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
